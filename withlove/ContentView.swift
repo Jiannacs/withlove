@@ -16,11 +16,17 @@ struct ContentView: View {
                 VStack {
                     HStack() {
                         Spacer()
-                        Image("lettericon")
-                            .resizable(resizingMode: .stretch)
-                            .aspectRatio(contentMode: .fit)
-                            .padding(.trailing, 10.0)
-                            .frame(width: 50.0)
+                        NavigationLink(destination: AboutUsView()) {
+                            VStack(alignment: .center) {
+                                Image("lettericon")
+                                    .resizable(resizingMode: .stretch)
+                                    .aspectRatio(contentMode: .fit)
+                                    .padding(.trailing, 10.0)
+                                    .frame(width: 50.0)
+                                Text("About Us")
+                                    .padding(.trailing, 10.0)
+                            }
+                        }
                     }
                     Spacer()
                         .frame(height: 150.0)
@@ -40,7 +46,7 @@ struct ContentView: View {
                             }
                         }
                         .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                        NavigationLink(destination: ReadView()) {
+                        NavigationLink(destination: WriteView()) {
                             VStack() {
                                 Image("lettericon")
                                     .resizable(resizingMode: .stretch)
@@ -51,7 +57,7 @@ struct ContentView: View {
                         }
                         .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                     }
-                    NavigationLink(destination: ReadView()) {
+                    NavigationLink(destination: MyLettersView()) {
                         VStack() {
                             Image("lettericon")
                                 .resizable(resizingMode: .stretch)
