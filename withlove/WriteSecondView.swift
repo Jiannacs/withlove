@@ -30,6 +30,93 @@ struct WriteSecondView: View {
                 Color(red: 0.836, green: 0.831, blue: 0.896)
                     .ignoresSafeArea()
             }
+            NavigationStack() {
+                // navigation heart
+                HStack {
+                    Spacer()
+                    Image("lettericon")
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
+                        .padding(.trailing, 10.0)
+                        .frame(width: 70.0)
+                }
+                VStack{
+                    Spacer()
+                        .frame(height: 20.0)
+                    Text("Fonts")
+                        .font(.largeTitle)
+                        .font(.system(size: 35))
+                        .frame(height: nil)
+                    Spacer()
+                        .frame(height: 10.0)
+                    // fonts
+                    HStack {
+                        NavigationLink(destination: WriteThirdView()) {
+                            Image("lettericon")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .padding()
+                        }
+                        NavigationLink(destination: WriteThirdView()) {
+                            Image("lettericon")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .padding()
+                        }
+                    }
+                    HStack{
+                        NavigationLink(destination: WriteThirdView()) {
+                            Image("lettericon")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .padding()
+                        }
+                        NavigationLink(destination: WriteThirdView()) {
+                            Image("lettericon")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .padding()
+                        }
+                    }
+                    Spacer()
+                        .frame(height: 90.0)
+                    // stamps
+                    Text("Stamps")
+                        .font(.largeTitle)
+                        .font(.system(size: 35))
+                        .frame(height: 22.0)
+                    Spacer()
+                        .frame(height: 20.0)
+                    HStack {
+                        NavigationLink(destination: WriteThirdView()) {
+                            Image("lettericon")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .padding()
+                        }
+                        NavigationLink(destination: WriteThirdView()) {
+                            Image("lettericon")//red
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .padding()
+                        }
+                    }
+                    HStack{
+                        NavigationLink(destination: WriteThirdView()) {
+                            Image("lettericon")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .padding()
+                        }
+                        NavigationLink(destination: WriteThirdView()) {
+                            Image("lettericon")//red
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .padding()
+                        }
+                    }
+                }
+            }
         }
     }
 }

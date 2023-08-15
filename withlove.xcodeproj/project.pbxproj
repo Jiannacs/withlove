@@ -19,6 +19,7 @@
 		BD7177C52A8BD6100048B6E9 /* AboutUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7177C42A8BD6100048B6E9 /* AboutUsView.swift */; };
 		BD7177C72A8BD85D0048B6E9 /* WriteSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7177C62A8BD85D0048B6E9 /* WriteSecondView.swift */; };
 		BD9142B32A8BD19D00F62896 /* ReadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9142B22A8BD19D00F62896 /* ReadView.swift */; };
+		BDB7867D2A8C0A7A0059397A /* WriteThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB7867C2A8C0A7A0059397A /* WriteThirdView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		BD7177C42A8BD6100048B6E9 /* AboutUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsView.swift; sourceTree = "<group>"; };
 		BD7177C62A8BD85D0048B6E9 /* WriteSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteSecondView.swift; sourceTree = "<group>"; };
 		BD9142B22A8BD19D00F62896 /* ReadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadView.swift; sourceTree = "<group>"; };
+		BDB7867C2A8C0A7A0059397A /* WriteThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteThirdView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				BD1367A02A8AB66C004DA374 /* ContentView.swift */,
 				BD7177C02A8BD5FB0048B6E9 /* WriteView.swift */,
 				BD7177C62A8BD85D0048B6E9 /* WriteSecondView.swift */,
+				BDB7867C2A8C0A7A0059397A /* WriteThirdView.swift */,
 				BD7177C22A8BD6060048B6E9 /* MyLettersView.swift */,
 				BD7177C42A8BD6100048B6E9 /* AboutUsView.swift */,
 				BD9142B22A8BD19D00F62896 /* ReadView.swift */,
@@ -272,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDB7867D2A8C0A7A0059397A /* WriteThirdView.swift in Sources */,
 				BD7177C12A8BD5FB0048B6E9 /* WriteView.swift in Sources */,
 				BD7177C32A8BD6060048B6E9 /* MyLettersView.swift in Sources */,
 				BD1367A12A8AB66C004DA374 /* ContentView.swift in Sources */,
