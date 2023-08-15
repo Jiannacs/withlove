@@ -14,6 +14,7 @@
 		BD1367B02A8AB66D004DA374 /* withloveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1367AF2A8AB66D004DA374 /* withloveTests.swift */; };
 		BD1367BA2A8AB66D004DA374 /* withloveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1367B92A8AB66D004DA374 /* withloveUITests.swift */; };
 		BD1367BC2A8AB66D004DA374 /* withloveUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1367BB2A8AB66D004DA374 /* withloveUITestsLaunchTests.swift */; };
+		BD9142B32A8BD19D00F62896 /* ReadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9142B22A8BD19D00F62896 /* ReadView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		BD1367B52A8AB66D004DA374 /* withloveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = withloveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD1367B92A8AB66D004DA374 /* withloveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = withloveUITests.swift; sourceTree = "<group>"; };
 		BD1367BB2A8AB66D004DA374 /* withloveUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = withloveUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BD9142B22A8BD19D00F62896 /* ReadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				BD13679E2A8AB66C004DA374 /* withloveApp.swift */,
 				BD1367A02A8AB66C004DA374 /* ContentView.swift */,
+				BD9142B22A8BD19D00F62896 /* ReadView.swift */,
 				BD1367A22A8AB66D004DA374 /* Assets.xcassets */,
 				BD1367A42A8AB66D004DA374 /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD1367A12A8AB66C004DA374 /* ContentView.swift in Sources */,
+				BD9142B32A8BD19D00F62896 /* ReadView.swift in Sources */,
 				BD13679F2A8AB66C004DA374 /* withloveApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
