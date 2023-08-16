@@ -9,6 +9,8 @@ import SwiftUI
 
 struct WriteSecondView: View {
     @Binding var color : String
+    @State var font = ""
+    @State var stamp = ""
     var body: some View {
         ZStack() {
             if color == "pink" {
@@ -32,89 +34,120 @@ struct WriteSecondView: View {
             }
             NavigationStack() {
                 // navigation heart
-                HStack {
+                HStack() {
                     Spacer()
-                    Image("lettericon")
-                        .resizable(resizingMode: .stretch)
-                        .aspectRatio(contentMode: .fit)
-                        .padding(.trailing, 10.0)
-                        .frame(width: 70.0)
+                    NavigationLink(destination: ContentView()) {
+                        VStack(alignment: .center) {
+                            Image("lettericon")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .padding(.trailing, 10.0)
+                                .frame(width: 50.0)
+                            Text("Home")
+                                .padding(.trailing, 10.0)
+                        }
+                    }
                 }
-                VStack{
+                VStack() {
                     Spacer()
-                        .frame(height: 20.0)
+                    // fonts
                     Text("Fonts")
                         .font(.largeTitle)
                         .font(.system(size: 35))
-                        .frame(height: nil)
-                    Spacer()
-                        .frame(height: 10.0)
-                    // fonts
-                    HStack {
+                    HStack() {
                         NavigationLink(destination: WriteThirdView()) {
                             Image("lettericon")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
-                                .padding()
+                                .padding([.leading, .bottom, .trailing], 20)
+                                .frame(width: 110)
                         }
+                        .simultaneousGesture(TapGesture().onEnded{
+                            font = "font1"
+                        })
                         NavigationLink(destination: WriteThirdView()) {
                             Image("lettericon")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
-                                .padding()
+                                .padding([.leading, .bottom, .trailing], 20)
+                                .frame(width: 110)
                         }
+                        .simultaneousGesture(TapGesture().onEnded{
+                            font = "font2"
+                        })
                     }
-                    HStack{
+                    HStack() {
                         NavigationLink(destination: WriteThirdView()) {
                             Image("lettericon")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
-                                .padding()
+                                .padding(.horizontal, 20)
+                                .frame(width: 110)
                         }
+                        .simultaneousGesture(TapGesture().onEnded{
+                            font = "font3"
+                        })
                         NavigationLink(destination: WriteThirdView()) {
                             Image("lettericon")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
-                                .padding()
+                                .padding(.horizontal, 20)
+                                .frame(width: 110)
                         }
+                        .simultaneousGesture(TapGesture().onEnded{
+                            font = "font4"
+                        })
                     }
-                    Spacer()
-                        .frame(height: 90.0)
                     // stamps
                     Text("Stamps")
                         .font(.largeTitle)
                         .font(.system(size: 35))
-                        .frame(height: 22.0)
+                        .padding(.top, 40.0)
+                    HStack() {
+                        NavigationLink(destination: WriteThirdView()) {
+                            Image("lettericon")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .padding([.leading, .bottom, .trailing], 20)
+                                .frame(width: 110)
+                        }
+                        .simultaneousGesture(TapGesture().onEnded{
+                            stamp = "stamp1"
+                        })
+                        NavigationLink(destination: WriteThirdView()) {
+                            Image("lettericon")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .padding([.leading, .bottom, .trailing], 20)
+                                .frame(width: 110)
+                        }
+                        .simultaneousGesture(TapGesture().onEnded{
+                            stamp = "stamp2"
+                        })
+                    }
+                    HStack() {
+                        NavigationLink(destination: WriteThirdView()) {
+                            Image("lettericon")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .padding(.horizontal, 20)
+                                .frame(width: 110)
+                        }
+                        .simultaneousGesture(TapGesture().onEnded{
+                            stamp = "stamp3"
+                        })
+                        NavigationLink(destination: WriteThirdView()) {
+                            Image("lettericon")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .padding(.horizontal, 20)
+                                .frame(width: 110)
+                        }
+                        .simultaneousGesture(TapGesture().onEnded{
+                            stamp = "stamp4"
+                        })
+                    }
                     Spacer()
-                        .frame(height: 20.0)
-                    HStack {
-                        NavigationLink(destination: WriteThirdView()) {
-                            Image("lettericon")
-                                .resizable(resizingMode: .stretch)
-                                .aspectRatio(contentMode: .fit)
-                                .padding()
-                        }
-                        NavigationLink(destination: WriteThirdView()) {
-                            Image("lettericon")//red
-                                .resizable(resizingMode: .stretch)
-                                .aspectRatio(contentMode: .fit)
-                                .padding()
-                        }
-                    }
-                    HStack{
-                        NavigationLink(destination: WriteThirdView()) {
-                            Image("lettericon")
-                                .resizable(resizingMode: .stretch)
-                                .aspectRatio(contentMode: .fit)
-                                .padding()
-                        }
-                        NavigationLink(destination: WriteThirdView()) {
-                            Image("lettericon")//red
-                                .resizable(resizingMode: .stretch)
-                                .aspectRatio(contentMode: .fit)
-                                .padding()
-                        }
-                    }
                 }
             }
         }
