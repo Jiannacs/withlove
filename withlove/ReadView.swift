@@ -9,49 +9,51 @@ import SwiftUI
 
 struct ReadView: View {
     var body: some View {
-        NavigationStack() {
-            HStack() {
-                Spacer()
-                NavigationLink(destination: ContentView()) {
-                    VStack(alignment: .center) {
-                        Image("lettericon")
-                            .resizable(resizingMode: .stretch)
-                            .aspectRatio(contentMode: .fit)
-                            .padding(.trailing, 10.0)
-                            .frame(width: 50.0)
-                        Text("Home")
-                            .padding(.trailing, 10.0)
-                    }
-                }
-            }
+        ScrollView() {
             VStack() {
-                //title
-                Text("Read")
-                    .font(.system(size: 40))
-                    .font(.title)
-                    .multilineTextAlignment(.center)
-                    .lineLimit(0)
-                    .padding(.all)
-                Text("Pre Written letter")
-                //the vstack is inside the scroll view so that its able to scroll
-                ScrollView {
-                    VStack {
+                NavigationStack() {
+                    HStack() {
+                        Spacer()
+                        NavigationLink(destination: ContentView()) {
+                            VStack(alignment: .center) {
+                                Image("lettericon")
+                                    .resizable(resizingMode: .stretch)
+                                    .aspectRatio(contentMode: .fit)
+                                    .padding(.trailing, 10.0)
+                                    .frame(width: 50.0)
+                                Text("Home")
+                                    .padding(.trailing, 10.0)
+                            }
+                        }
+                    }
+                    VStack() {
+                        //title
+                        Text("Read")
+                            .font(.system(size: 40))
+                            .font(.title)
+                            .multilineTextAlignment(.center)
+                            .lineLimit(0)
+                            .padding(.all)
+                        Text("Pre Written letter")
                         //each navigation link will take you to the page that is desginated for the pre written letter
                         NavigationLink(destination: LetterOneView()) {
                             Image("lettericon")
                                 .resizable(resizingMode: .stretch)
-                                .aspectRatio(contentMode: .fill)
-                                .padding(.all)}
+                                .aspectRatio(contentMode:.fill)
+                                .padding(.all)
+                        }
                         NavigationLink(destination: LetterTwoView()) {
                             Image("lettericon")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fill)
-                                .padding(.all)}
+                                .padding(.all)
+                        }
                         NavigationLink(destination: LetterThreeView()) {
                             Image("lettericon")
-                                .resizable(resizingMode: .stretch)
+                                .resizable(resizingMode:.stretch)
                                 .aspectRatio(contentMode: .fill)
-                                .padding(.all)}
+                                .padding(.all)
+                        }
                     }
                 }
             }
